@@ -1,0 +1,198 @@
+:root {
+    --primary-color: #4361ee;
+    --light-color: #e1ecf6;
+    --dark-color: #212529;
+    --danger-color: #e63946;
+    --warning-color: #f9c74f;
+    --info-color: #4cc9f0;
+    --gray-color: #adb5bd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: var(--dark-color);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px black;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--light-color);
+    border-radius: 10px;
+}
+
+.todo-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+    font-size: 13px;
+}
+
+.priority-selector {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.priority-btn {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.priority-btn.selected {
+    opacity: 1;
+}
+
+.very-high {
+    background-color: var(--danger-color);
+}
+
+.high {
+    background-color: var(--warning-color);
+}
+
+.normal {
+    background-color: var(--info-color);
+}
+
+.low {
+    background-color: var(--gray-color);
+}
+
+.add-btn {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.todos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    min-height: 100px;
+}
+
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid gray;
+}
+
+.todo-count {
+    font-size: 14px;
+    color: black;
+}
+
+.clear-completed {
+    background: none;
+    border: none;
+    color: var(--danger-color);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.todo-item.very-high-bg{
+    background-color: var(--danger-color);
+    border-left: 5px solid var(--danger-color);
+}
+
+.todo-item.high-bg {
+    background-color: var(--warning-color);
+    border-left: 5px solid var(--warning-color);
+}
+
+.todo-item.normal-bg {
+    background-color: var(--info-color);
+    border-left: 5px solid var(--info-color);
+}
+
+.todo-item.low-bg {
+    background-color: var(--gray-color);
+    border-left: 5px solid var(--gray-color);
+}
+
+.todo-content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.todo-checkbox{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+
+.todo-text{
+    font-size: 16px;
+    word-break: break-word;
+}
+
+.todo-text.completed{
+    text-decoration: line-through;
+    color: var(--gray-color);
+}
+
+.todo-date{
+    font-size: 14px;
+    color: var(--dark-color);
+}
+
+.todo-actions{
+    display: flex;
+    gap: 10px;
+}
+
+.todo-edit, .todo-delete{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: green;
+}
