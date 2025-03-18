@@ -17,33 +17,35 @@
   </head>
   <body>
     <div class="container">
-      <h1>Todo List</h1>
+      <h1>ToDo List</h1>
       <div class="input-section">
         <input
           type="text"
           class="todo-input"
-          placeholder="Yapılacak görevi yazınız."
+          placeholder="Type the task here..."
         />
 
         <div class="priority-selector">
           <button class="priority-btn very-high" data-priority="very-high">
-            Çok Önemli
+            Very Important
           </button>
-          <button class="priority-btn high" data-priority="high">Önemli</button>
+          <button class="priority-btn high" data-priority="high">
+            Important
+          </button>
           <button class="priority-btn normal" data-priority="normal">
             Normal
           </button>
-          <button class="priority-btn low" data-priority="low">Önemsiz</button>
+          <button class="priority-btn low" data-priority="low">Low</button>
         </div>
-        <button class="add-btn" disabled>Ekle</button>
+        <button class="add-btn" disabled>Add</button>
       </div>
 
       <div class="todos-container">
         <!-- Todo ögeleri js ile buraya eklenecektir -->
       </div>
       <div class="status-bar">
-        <span class="todo-count">0 Görev</span>
-        <button class="clear-completed">Tamamlananları Temizle</button>
+        <span class="todo-count">0 Task(s)</span>
+        <button class="clear-completed">Clean Completed</button>
       </div>
     </div>
   </body>

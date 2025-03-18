@@ -95,7 +95,7 @@ function renderTodos() {
     // Mevcut görevleri temizle
     todosContainer.innerHTML = ""
     if(todos.length === 0){
-        todosContainer.innerHTML = '<p class="empty-message"> Henüz bir görev yok</p>'
+        todosContainer.innerHTML = '<p class="empty-message"> No tasks yet.</p>'
         return;
     }
     // Her görev için HTML ögesi oluştur
@@ -207,7 +207,7 @@ function updateTodoCount() {
     const completedTodos = todos.filter(todo => todo.completed)
     // console.log(completedTodos);
 
-    todoCount.textContent = `${completedTodos.length} / ${totalTodos} görev tamamlandı.`
+    todoCount.textContent = `${completedTodos.length} / ${totalTodos} task(s) completed.`
 }
 
 document.addEventListener("DOMContentLoaded", () => {
